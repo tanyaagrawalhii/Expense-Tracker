@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgetary</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="main">
+        <h1>Expense Tracker</h1>
+        <div class="error_mssg">
+            <p>Please Enter Budget Amount | More than 0</p>
+        </div>
+        <div class="budget_container">
+            <div class="ur_budget">
+                <form>
+                    
+                    
+                    <label for="budget"><br>Your Budget : </label>
+                    <input type="number" placeholder="Enter Your Budget" class="budget_input">
+                    <button class="btn" id="btn_budget">Calculate</button>
+                    
+                </form>
+            </div>
+            <div class="ur_expenses">
+                <form>
+                    <label for="budget_date">Date :</label>
+                    <input type="date" id ="budget_date">
+                    <label for="expenses"><br>Expenses Details : </label>
+                    <input type="text" placeholder="Enter Your Expenses" class="expenses_input">
+                    <input type="number" placeholder="Enter Expenses Amount" class="expenses_amount">
+                    <button class="btn" id="btn_expenses">Add Expenses</button>
+                </form>
+            </div>
+            
+            
+
+        </div>
+
+        <ul class="cards">
+            <li>
+                <i class="bx bx-money"></i>
+                <span class="info">
+                    <h3><span>$</span><span class="budget_card">7,373</span></h3>
+                    <p>Budget</p>
+                </span>
+            </li>
+            <li>
+                <i class="bx bx-credit-card"></i>
+                <span class="info">
+                    <h3><span>$</span><span class="expenses_card">9,373</span></h3>
+                    <p>Expenses</p>
+                </span>
+            </li>
+            <li>
+                <i class="bx bx-dollar"></i>
+                <span class="info">
+                    <h3><span>$</span><span class="balance_card">3,373</span></h3>
+                    <p>Balance</p>
+                </span>
+            </li>
+        </ul>
+
+        <div class="tbl">
+            <h3>Budget Details</h3>
+            <div class="tbl_data">
+                <!-- <ul class="tbl_content">
+                    <li>1</li>
+                    <li>Gaming Mouse</li>
+                    <li><span>$</span>600</li>
+                    <li>02-05-2024</li>
+                    <li>
+                        <button type="button" class ="btn_edit">Edit</button>
+                        <button type="button" class ="btn_delete">Delete</button>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+
+    </div>
+    
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

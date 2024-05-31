@@ -1,0 +1,221 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ruda:wght@400;600;700&display=swap"); */
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color: #f6f6f9;
+font-family: "poppins" , sans-serif;
+}
+
+.main{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+    overflow-x: hidden;
+}
+
+.main h1{
+    padding: 2rem 0;
+    font-size: 4rem;
+    text-align: center;
+    color:#363949 ;
+
+}
+
+
+.error_mssg{
+    background-color: #d32f2f;
+    color: #f6f6f9;
+    text-align: center;
+    padding: 1rem 0;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: none;
+}
+.error_mssg.error{
+    display: block;
+    transition: all 0.8s ease-in;
+}
+
+.budget_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+ .ur_budget{
+    
+    background-color:#f6f6f9;
+    width: 600px;
+    height:100px;
+    padding: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.ur_expenses{
+    background-color: #f6f6f9;
+    width: 600px;
+    height:100px;
+    padding: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+.ur_budget form input , .ur_expenses form input
+{
+    padding: 0.4rem 1rem;
+    width:300px;
+    border:1px solid #ddd;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 3px;
+}
+
+.ur_budget form input:focus , .ur_expenses form input:focus{
+    outline: none;
+}
+
+.ur_budget form , .ur_expenses form{
+    position: relative;
+}
+.budget_container .btn{
+    position: absolute;
+    right: 0;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    padding: 0.6rem 1rem;
+    color: #f6f6f9;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #363949;
+
+}
+.budget_container .btn:active{
+    transform: scale(0.98);
+}
+
+.main .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 1.5em;
+    padding: 2rem;
+}
+
+.main .cards li{
+    padding:1.8rem;
+    background-color: #f6f6f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.main .cards li:hover{
+    transform: translateY(-10px);
+}
+
+.main .cards li .bx{
+    width: 4.5rem;
+    height:4.5rem;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .cards li:nth-child(1) .bx{
+    background-color: #cfe8ff;
+    color:#1976d2;
+}
+.main .cards li:nth-child(2) .bx{
+    background-color: #fff2c6;
+    color:#fbc02d;
+}
+.main .cards li:nth-child(3) .bx{
+    background-color: #bbf7d0;
+    color:#388e3c;
+}
+
+.main .cards li .info h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#363949;
+}
+
+.main .cards li .info p{
+    color: #363949;
+}
+
+.tbl{
+    padding:2rem;
+    background-color: #f6f6f9;
+    margin:1rem 2rem;
+    border-radius: 5px;
+}
+
+.tbl h3{
+    font-size: 2rem;
+    margin:1rem 0;
+
+}
+.tbl_content{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 40% 20%  20% 2fr;
+    align-items: center;
+    background-color: #363949;
+    color:#f6f6f9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.tble_data{
+    overflow-y: auto;
+    height:150px;
+}
+
+.tbl_content button{
+    outline: none;
+    border:none;
+    color:#f6f6f9;
+    padding: 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d32f2f;
+
+}
+
+.tbl_content button:active{
+    transform: scale(0.98);
+}
+
+.tbl_content button:first-child{
+    background-color: #388e3c;
+}
